@@ -7,19 +7,23 @@
 body, html{
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 96vw;
     height: 100vh;
-}
-body{
 }
 
 #headerFixo{
     background-color: black;
+    height: 300px;
+    position: relative;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 #headerFixo .promo{
     background-color: rgb(109, 35, 178);
-    width: 100vw;
+    width: 100%;
 }
 #headerFixo .promo p{
     color: white;
@@ -28,52 +32,99 @@ body{
     text-align: center;
 }
 
-#headerFixo .busca{
+#headerFixo .topo{
     color: white;
+
+    width: 100%;
+    margin: 10px 0px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
-.busca #span_menu:hover{
+
+.topo #span_menu{
+    height: 24px;
+}
+
+.topo #span_menu:hover{
     background-color: white;
     color: black;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.busca .menu{
-    max-width: 200px;
+.topo .img_muca{
+    background: black url(https://static.wixstatic.com/media/6e4c0a_3399baa8a4434e409db3d9f304d5a1fb~mv2.jpg/v1/fill/w_244,h_49,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6e4c0a_3399baa8a4434e409db3d9f304d5a1fb~mv2.jpg) no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 50px;
+}
+
+.buscar{
+    color: gray;
+    margin-top: 20px;
+    padding: 10px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.buscar #id_busca, #search{
+    background-color: white;
+    border: 0px;
+    padding: 0px 2px;
+}
+.buscar #id_busca{
+    height: 100%;
+}
+
+.topo .menu_display{
+    display: none;
+}
+
+.topo .menu{
+    max-width: 250px;
     background-color: rgb(109, 35, 178);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-}
 
-.busca .menu .login{
-    background-color: rgb(80, 26, 130);
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    font-variant: small-caps;
-}
-.busca .menu .login a:hover{
-    text-decoration: underline;
-}
-
-.busca .menu ul{
-    list-style-type: none;
-    padding: 2px 10px;
-}
-.busca .menu ul li{
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.468);
-    padding: 5px;
-}
-.busca .menu ul li:hover{
-    background-color: rgb(80, 26, 130);
-    transition: 0.4s;
+    position: absolute;
+    top: 2%;
+    left: 2%;
 }
 
 .busca .menu a{
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.busca .menu .login{
+    background-color: rgb(80, 26, 130);
+
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+
+    text-align: center;
+    font-variant: small-caps;
+}
+.busca .menu .login a:hover{
+    text-decoration: underline;
+}
+
+.menu .menu_dados ul{
+    list-style-type: none;
+    padding: 0px 10px;
+}
+.menu_dados ul li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.468);
+    padding: 15px 20px;
+}
+.menu_dados ul li:hover{
+    background-color: rgb(80, 26, 130);
+    transition: 0.4s;
 }
