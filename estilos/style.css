@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+body{
+}
+
+#headerFixo{
+    background-color: black;
+}
+
+#headerFixo .promo{
+    background-color: rgb(109, 35, 178);
+    width: 100vw;
+}
+#headerFixo .promo p{
+    color: white;
+    margin: 0;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#headerFixo .busca{
+    color: white;
+}
+.busca #span_menu:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.busca .menu{
+    max-width: 200px;
+    background-color: rgb(109, 35, 178);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.busca .menu .login{
+    background-color: rgb(80, 26, 130);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-variant: small-caps;
+}
+.busca .menu .login a:hover{
+    text-decoration: underline;
+}
+
+.busca .menu ul{
+    list-style-type: none;
+    padding: 2px 10px;
+}
+.busca .menu ul li{
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.468);
+    padding: 5px;
+}
+.busca .menu ul li:hover{
+    background-color: rgb(80, 26, 130);
+    transition: 0.4s;
+}
+
+.busca .menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
