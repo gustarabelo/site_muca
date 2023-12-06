@@ -11,6 +11,10 @@ body, html{
     height: 100vh;
 }
 
+a{
+    color: white;
+}
+
 #headerFixo{
     background-color: black;
     height: 300px;
@@ -36,11 +40,11 @@ body, html{
     color: white;
 
     width: 100%;
-    margin: 10px 0px;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .topo #span_menu{
@@ -62,7 +66,7 @@ body, html{
 }
 
 .buscar{
-    color: gray;
+    color: rgb(89, 89, 89);
     margin-top: 20px;
     padding: 10px;
     
@@ -79,15 +83,15 @@ body, html{
     height: 100%;
 }
 
-.topo .menu_display{
-    display: none;
+.menu_display{
+    display: ;
 }
 
-.topo .menu{
-    max-width: 250px;
+.menu_display .menu{
+    width: 250px;
     background-color: rgb(109, 35, 178);
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 
@@ -96,13 +100,12 @@ body, html{
     left: 2%;
 }
 
-.busca .menu a{
-    color: white;
+.menu_display .menu a{
     text-decoration: none;
     font-weight: bold;
 }
 
-.busca .menu .login{
+.menu_display .menu .login{
     background-color: rgb(80, 26, 130);
 
     width: 100%;
@@ -112,11 +115,11 @@ body, html{
     text-align: center;
     font-variant: small-caps;
 }
-.busca .menu .login a:hover{
+.menu_display .menu .login a:hover{
     text-decoration: underline;
 }
 
-.menu .menu_dados ul{
+.menu_display .menu_dados ul{
     list-style-type: none;
     padding: 0px 10px;
 }
