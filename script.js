@@ -1,10 +1,9 @@
-let menu = document.querySelector('.menu_display')
+var menu = document.querySelector('.menu_display')
 
-
-function openMenu(){
-    if(menu.style.display == none){
-        menu.style.display = block;
-    }else if(menu.style.display == block){
-        menu.style.display = none
+function clickMenu(){
+    if (menu.style.display == 'block') {
+        menu.style.display = 'none';
+    } else{
+        menu.style.display = 'block';
     }
 }

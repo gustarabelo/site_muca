@@ -18,30 +18,30 @@
                 <P>10% DE DESCONTO CUPOM: Muca10off</P>
             </div>
             <div class="topo">
-                <span class="material-symbols-outlined" id="span_menu" onclick="openMenu()" >menu</span>
-                <div class="menu_display">
-                    <div class="menu">
-                        <div class="login">
-                            <a href="#">Login</a>
-                        </div>
-                        <div class="menu_dados">
-                            <ul>
-                                <li><a href="#">Início</a></li>
-                                <li><a href="#">Blusas Street</a></li>
-                                <li><a href="#">Shorts</a></li>
-                                <li><a href="#">Calças</a></li>
-                                <li><a href="#">Conjuntos Outfit</a></li>
-                                <li><a href="#">Política da loja</a></li>
-                                <li><a href="#">Sobre</a></li>
-                                <li><a href="#">Envio e devolução</a></li>
-                                <li><a href="#">Cabeçalho do menu</a></li>
-                                <li><a href="#">Resultados de busca</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <span class="material-symbols-outlined" id="span_menu" onclick="clickMenu()">menu</span>
                 <div class="img_muca"></div>
                 <a href="#"><span class="material-symbols-outlined">shopping_cart</span></a>
+            </div>
+            <div class="menu_display">
+                <div class="menu">
+                    <div class="login">
+                        <a href="#">Login</a>
+                    </div>
+                    <div class="menu_dados">
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Blusas Street</a></li>
+                            <li><a href="#">Shorts</a></li>
+                            <li><a href="#">Calças</a></li>
+                            <li><a href="#">Conjuntos Outfit</a></li>
+                            <li><a href="#">Política da loja</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Envio e devolução</a></li>
+                            <li><a href="#">Cabeçalho do menu</a></li>
+                            <li><a href="#">Resultados de busca</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="buscar">
                 <span class="material-symbols-outlined" id="search">search</span>
@@ -104,5 +104,17 @@
             <p>&copy; 2022 por Muca Teste. Orgulhosamente com Respeito</p>
         </div>
     </footer>
+    <script>
+        var menu1 = document.querySelector('.menu_display')
+
+        function clickMenu(){
+            if (menu1.style.display == 'block') {
+                menu1.style.display = 'none';
+            } else{
+                menu1.style.display = 'block';
+            }
+        }
+
+    </script>
 </body>
 </html>
