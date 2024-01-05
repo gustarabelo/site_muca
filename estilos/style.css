@@ -7,8 +7,7 @@
 body, html{
     margin: 0;
     padding: 0;
-    width: 96vw;
-    height: 100vh;
+    width: 100%;
 }
 
 a{
@@ -17,7 +16,7 @@ a{
 
 #headerFixo{
     background-color: black;
-    height: 300px;
+    height: 230px;
     position: relative;
 
     display: flex;
@@ -60,31 +59,36 @@ a{
 
 .topo .img_muca{
     background: black url(https://static.wixstatic.com/media/6e4c0a_3399baa8a4434e409db3d9f304d5a1fb~mv2.jpg/v1/fill/w_244,h_49,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6e4c0a_3399baa8a4434e409db3d9f304d5a1fb~mv2.jpg) no-repeat;
-    background-size: contain;
-    width: 250px;
-    height: 50px;
+    background-size: cover;
+    width: 400px;
+    height: 80px;
 }
 
 .buscar{
     color: rgb(89, 89, 89);
     margin-top: 20px;
-    padding: 10px;
-    
+    height: 40px;
+    width: 400px;
+
+    cursor: text;
     display: flex;
-    align-items: center;
 }
 
 .buscar #id_busca, #search{
     background-color: white;
     border: 0px;
-    padding: 0px 2px;
 }
 .buscar #id_busca{
     height: 100%;
+    width: 100%;
+}
+.buscar #search{
+    padding: 10px 8px;
+    height: 50%;
 }
 
 .menu_display{
-    display: block;
+    display: none;
 }
 
 .menu_display .menu{
